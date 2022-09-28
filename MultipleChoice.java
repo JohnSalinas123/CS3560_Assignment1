@@ -1,10 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class MultipleChoice extends Question {
 
-    private char[] possibleAnswers = {'A','B','C','D','E'};
+    private List<Character> answer;
     
-    public MultipleChoice(String content) {
-        super(content);
+    
+    public MultipleChoice(String content, List<Character> choices, List<Character> answer) {
+
+        this.setQuestion(content);
+        this.answer = answer;
+        this.setChoices(choices);
 
     }
+
+
 
 }
