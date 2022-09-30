@@ -6,12 +6,12 @@ public class MultipleChoice extends Question {
     private List<Character> answer;
     
     
-    public MultipleChoice(String content, List<Character> choices, List<Character> answer) {
+    public MultipleChoice(String question, List<Character> choices, List<Character> answer) {
 
-        this.setQuestion(content);
-        this.answer = answer;
+        this.setQuestion(question);
         this.setChoices(choices);
-
+        this.answer = answer;
+        
     }
 
 

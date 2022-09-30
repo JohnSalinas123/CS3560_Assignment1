@@ -59,18 +59,13 @@ public class SimulationDriver {
 
     }
 
-
-    
-    
-
-
     public static void main(String[] args) {
 
         int numberOfStudents = 10;
 
         VotingService mainVotingService = new VotingService();
 
-        // Multiple Choice
+        // Multiple Choice run
         System.out.println("MULTIPLE CHOICE **************************************************************");
         ArrayList<Character> choicesList1 = new ArrayList<Character>(Arrays.asList('A','B','C','D','E'));
         ArrayList<Character> answers1 = new ArrayList<Character>();
@@ -93,7 +88,7 @@ public class SimulationDriver {
         mainVotingService.printStats();
 
 
-        // Single Choice
+        // Single Choice run
         System.out.println("SINGLE CHOICE ****************************************************************");
         ArrayList<Character> choicesList2 = new ArrayList<Character>(Arrays.asList('1','2'));
         int randomNum2 = (int)(Math.random() * choicesList2.size());

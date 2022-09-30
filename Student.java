@@ -17,7 +17,7 @@ public class Student {
         this.ID = UUID.randomUUID();
         
 
-        // generate answers
+        // student thinks of answers for the given question
         List<Character> choicesCopy = new ArrayList<>(curQuestion.getChoices());
         int numChoices = curQuestion.getChoicesLength();
 
@@ -41,18 +41,23 @@ public class Student {
 
     }
 
+    // get the students ID
     public UUID getStudentID() {
 
         return this.ID;
 
     }
 
+
+    // get the students answer
     public List<Character> getStudentAnswer() {
         
         return new ArrayList<>(this.answer);
 
     }
 
+
+    // print students ID and answers for the given question
     public String toString() {
 
         System.out.println();

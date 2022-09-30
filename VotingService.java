@@ -7,6 +7,7 @@ public class VotingService {
     private Question curQuestion;
     private HashMap<UUID, List<Character>> answerMap = new HashMap<>();
 
+    // set the current question the Voting Service is working with
     public void setQuestion(Question newQuestion) {
 
         this.curQuestion = newQuestion;
@@ -17,6 +18,7 @@ public class VotingService {
 
     }
 
+    // add the answer of one student, linked to the students UUID
     public void addStudentAnswer(Student student) {
 
         UUID student_id = student.getStudentID();
@@ -27,6 +29,7 @@ public class VotingService {
     }
     
 
+    // print service stats
     public void printStats() {
 
         int numberOfStudents = this.answerMap.size();
